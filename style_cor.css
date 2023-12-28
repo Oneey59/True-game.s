@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face{
+    font-family: "Sansation";
+    src: url(Sansation-Regular.ttf)
+}
+@font-face{
+    font-family: "Sansation_1";
+    src: url(Sansation_Light.ttf)
+}
+body{
+    background-color: #644005;
+}   
+.up{
+    width: 100%;
+    height: 112px;
+    background-color: #9D7B60;
+}
+.logo{
+    width:10%;
+    height:10%;
+    transform: translate(40%, 50%);
+}
+.menu{
+    display: flex;   
+    justify-content: center;
+    font-size: 55px;
+}
+.menu li{
+    margin-right: 25px;
+    list-style-type: none;
+    display: inline;
+}
+  
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+.link {
+    position: relative;
+  }
+  .link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    width: 0;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.link:hover:after {
+    width: 100%;
+}
+.aut{
+    width: 18%;
+    height: 100%;
+    transform: translate(432%, -66%);
+    display: flex;
+
+}
+.osnova{
+    background-color:#644005;
+    border-radius: 20px;
+    height: 900px;
+    width: 70%;
+    transform: translate(21%, -7%);
+}
+.cor_up{
+    width: 50%;
+    height: 55%;
+    transform: translate(0%, 32%);
+}
+.cor_up img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.LK{
+    width: 50%;
+    height: 55%;
+    transform: translate(0%, 32%);
+}
+.LK img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.osnova{
+    background-color:#B3A272;
+    border-radius: 20px;
+    height: 900px;
+    width: 70%;
+    transform: translate(20%, 5%);
+}
+.text_1{
+    font-family:"Sansation";
+    color: #fff8f8;
+    font-size: 32px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(0%);
+}
+.tov{
+    background-color:#9D7B60;
+    border-radius: 20px;
+    width: 90%;
+    height: 180px;
+    transform: translate(5%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fot_tov{
+    width: 20%;
+    height: 100%;
+    transform: translate(0%, 0%);
+}
+.fot_tov img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.txt_tov{
+    width: 45%;
+    height: 100%;
+    transform: translate(0%, 0%);
+}
+.cent{
+    width: 30%;
+    height: 100%;
+}
+.text_5{
+    font-family:"Sansation";
+    color: #fff8f8;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(2%);
+}
+.dostavka{
+    width: 45%;
+    height: 15%;
+    transform: translate(120%, 200%);
+    display: flex;
+}
+.text_6{
+    font-family:"Sansation";
+    color: #000000;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.cena{
+    font-family:"Sansation";
+    color: #fff8f8;
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(-2%, 100%);
+}
+.cena_2{
+    font-family:"Sansation";
+    color: #fff8f8;
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(-2%, -420%);
+}
+.button_1{
+    height: 100%;
+    width: 40%;
+    font-family:"Sansation";
+    font-size: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translate(25%);
+}
+.button_1:hover{
+    background-color: #8f8f8f; /* Зеленый */
+    color: rgb(0, 0, 0);
+}
+.button_1:active{
+    background-color: #464646; /* Зеленый */
+    color: white;
+}
+.button_2{
+    height: 100%;
+    width: 40%;
+    font-family:"Sansation";
+    font-size: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translate(-25%);
+}
+.button_2:hover{
+    background-color: #8f8f8f; /* Зеленый */
+    color: rgb(0, 0, 0);
+}
+.button_2:active{
+    background-color: #464646; /* Зеленый */
+    color: white;
+}
+.itog{
+    width: 90%;
+    height: 300px;
+    background-color: #000000b8;
+    border-radius: 20px;
+    transform: translate(5%, 100%);
+}
+.button_3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5bad4b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #59d05d;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    transform: translate(-120%, 100%);
+  
+  
+}
+.button_3:hover {
+    background-color: #5bd25f; /* Зеленый */
+    color: rgb(255, 255, 255);
+}
+.button_:active{
+    background-color: #4cea52; /* Зеленый */
+    color: rgb(255, 255, 255);
+}
+.text_2{
+    font-family:"Sansation";
+    color: #fff8f8;
+    font-size: 32px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(2%);
+}
+.text_3{
+    font-family:"Sansation";
+    color: #fff8f8;
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(2%);
+}
+.footer{
+    background-color: #9D7B60;
+    width: 100%;
+    height: 250px;
+    transform: translate(0%, 35%);
+}
+.text_fo{
+    font-family: "Sansation";
+    font-size: 16px;
+    color: #ffffff;
+    transform: translate(7.5%);
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transform: translate(4%, 10%);
+}
+@media screen and (max-width: 720px){
+    .button_1{
+        height: 100%;
+        width: 80%;
+        font-family:"Sansation";
+        font-size: 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: 2px solid #000000;
+        cursor: pointer;
+        border-radius: 5px;
+        transform: translate(10%);
+    }
+    .button_2{
+        height: 100%;
+        width: 80%;
+        font-family:"Sansation";
+        font-size: 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: 2px solid #000000;
+        cursor: pointer;
+        border-radius: 5px;
+        transform: translate(-10%);
+    }
+    .button_3{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #5bad4b;
+        color: rgb(255, 255, 255);
+        border: 2px solid #59d05d;
+        cursor: pointer;
+        width: 250px;
+        height: 50px;
+        font-size: 24px;
+        border-radius: 10px;
+        transform: translate(-30%, 100%);
+      
+      
+    }
+    .footer{
+        background-color: #9D7B60;
+        width: 100%;
+        height: 250px;
+        transform: translate(0%, 71%);
+    }
+}

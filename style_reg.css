@@ -1,0 +1,183 @@
+@font-face{
+    font-family: "Sansation";
+    src: url(Sansation-Regular.ttf)
+}
+@font-face{
+    font-family: "Sansation_1";
+    src: url(Sansation_Light.ttf)
+}
+body {
+    background: url('video.png');
+    background-size: cover;
+}
+    
+.bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+    z-index: -9999;
+}
+.aute{
+    background-color:#000000b8;
+    border-radius: 20px;
+    width: 40%;
+    height: 620px;
+    transform: translate(71.5%, 13.5%);
+}
+.text_1{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(0%, 30%);
+}
+input{
+    width: 55%;
+    height: 7%;
+    transform: translate(40%, 0%);
+    border-radius: 20px;
+    font-family:"Sansation";
+    font-size: 20px;
+}
+.log{
+    transform: translate(40%, 70%);
+}
+.pass{
+    transform: translate(40%, 110%);
+}
+.pass_2{
+    transform: translate(40%, 130%);
+}
+.nam{
+    transform: translate(40%, 10%);
+}
+.sur{
+    transform: translate(40%, 30%);
+}
+.pat{
+    transform: translate(40%, 50%);
+}
+.eml{
+    transform: translate(40%, 90%);
+}
+.button_2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5bad4b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #59d05d;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    transform: translate(0%, 150%);
+  
+  
+}
+.button_2:hover {
+    background-color: #5bd25f; /* Зеленый */
+    color: rgb(255, 255, 255);
+}
+.button_2:active{
+    background-color: #4cea52; /* Зеленый */
+    color: rgb(255, 255, 255);
+}
+img{
+    width: 7%;
+    height: 7%;
+    transform: translate(50%, -1020%);
+}
+@media screen and (max-width: 720px){
+    .bgvideo {
+        position: fixed;
+        right: -100%;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: 100%;
+        z-index: -9999;
+      }
+    .aute{
+        background-color:#000000b8;
+        border-radius: 20px;
+        width: 90%;
+        height: 1020px;
+        transform: translate(6%, 10%);
+    }
+    .text_1{
+        font-family:"Sansation";
+        color: #ffffff;
+        font-size: 36px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        width: 100%;
+        transform: translate(0%, 30%);
+    }
+    input{
+        width: 65%;
+        height: 6%;
+        transform: translate(40%, 0%);
+        border-radius: 40px;
+        font-family:"Sansation";
+        font-size: 20px;
+    }
+    .log{
+        transform: translate(25%, 70%);
+    }
+    .pass{
+        transform: translate(25%, 110%);
+    }
+    .pass_2{
+        transform: translate(25%, 130%);
+    }
+    .nam{
+        transform: translate(25%, 10%);
+    }
+    .sur{
+        transform: translate(25%, 30%);
+    }
+    .pat{
+        transform: translate(25%, 50%);
+    }
+    .eml{
+        transform: translate(25%, 90%);
+    }
+    .button_2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #5bad4b;
+        color: rgb(255, 255, 255);
+        border: 2px solid #59d05d;
+        cursor: pointer;
+        width: 350px;
+        height: 60px;
+        font-size: 24px;
+        border-radius: 40px;
+        transform: translate(0%, 170%);
+      
+      
+    }
+    .button_2:hover {
+        background-color: #5bd25f; /* Зеленый */
+        color: rgb(255, 255, 255);
+    }
+    .button_2:active{
+        background-color: #4cea52; /* Зеленый */
+        color: rgb(255, 255, 255);
+    }
+    img{
+        width: 8.5%;
+        height: 7%;
+        transform: translate(50%, -830%);
+    }
+}

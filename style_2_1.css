@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #644005;
+}   
+.up{
+    width: 100%;
+    height: 112px;
+    background-color: #9D7B60;
+}
+.logo{
+    width:10%;
+    height:10%;
+    transform: translate(40%, 50%);
+}
+.menu{
+    display: flex;   
+    justify-content: center;
+    font-size: 55px;
+}
+.menu li{
+    margin-right: 25px;
+    list-style-type: none;
+    display: inline;
+}
+  
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+.link {
+    position: relative;
+  }
+  .link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    width: 0;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.link:hover:after {
+    width: 100%;
+}
+.aut{
+    width: 18%;
+    height: 100%;
+    transform: translate(432%, -66%);
+
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5bad4b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #59d05d;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    transform: translate(0%, 60%);
+
+
+}
+button:hover {
+    background-color: #5bd25f; /* Зеленый */
+    color: white;
+}
+button:active{
+    background-color: #4cea52; /* Зеленый */
+    color: white;
+}
+.filtr{
+    background-color:#B3A272;
+    border-radius: 20px;
+    height: 110px;
+    width: 90%;
+    transform: translate(5.5%, 0%);
+    display: flex;
+}
+.cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    margin: 0 auto;
+}
+.card {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #9D7B60   ;
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+  }
+  
+  /* При наведении на карточку - меняем цвет тени */
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.563);
+  }
+  
+  .card__top {
+    flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    position: relative;
+    overflow: hidden; /* Скрываем, что выходит за пределы */
+  }
+  
+  /* Контейнер для картинки */
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+    transition: 0.2s;
+  }
+  
+  /* При наведении - увеличиваем картинку */
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+    padding: 10px;
+  }
+  
+  .card__prices {
+    display: flex;
+    margin-bottom: -15px;
+    flex: 0 0 40%; /* Размещаем цены равномерно в две колонки */
+  }
+  
+  .card__price::after {
+    content: "₽";
+    margin-left: 5px;
+    position: relative;
+  }
+  
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+  }
+  
+  .card__price--discount::before {
+    content: "Цена:";
+    font-weight: 400;
+    font-size: 15px;
+    color: #1b1b1b;
+  }
+  
+  
+  
+  .card__title {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 120%;
+    color: #171717;
+  }
+  
+  .card__title:hover {
+    color: #ffffff;
+  }
+  
+  .card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5bad4b;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #59d05d;
+    border-radius: 4px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    margin-top: 25%; /* Прижимаем кнопку к низу карточки */
+    color: #000000;
+    transform: translate(0%, -110%);
+  }
+  
+  .card__add:hover {
+    border: 2px solid #59d05d;
+    background-color: #5bd25f;
+    color: #ffffff;
+  }
+  .footer{
+    background-color: #9D7B60;
+    width: 100%;
+    height: 250px;
+    transform: translate(0%, 7%);
+}
+.text_fo{
+  font-family: "Sansation";
+  font-size: 16px;
+  color: #ffffff;
+  transform: translate(7.5%);
+  line-height: 1.5;
+  letter-spacing: 1px;
+  transform: translate(4%, 10%);
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_all_tovar.css">
+    <title>True Games</title>
+    <script>
+        function magnify(imgID, zoom) {
+          var img, glass, w, h, bw;
+          img = document.getElementById(imgID);
+          /*создать увеличительное стекло:*/
+          glass = document.createElement("DIV");
+          glass.setAttribute("class", "img-magnifier-glass");
+          /*вставить увеличительное стекло:*/
+          img.parentElement.insertBefore(glass, img);
+          /*установите свойства фона для увеличительного стекла:*/
+          glass.style.backgroundImage = "url('" + img.src + "')";
+          glass.style.backgroundRepeat = "no-repeat";
+          glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+          bw = 3;
+          w = glass.offsetWidth / 2;
+          h = glass.offsetHeight / 2;
+          /*выполните функцию, когда кто-то перемещает лупу по изображению:*/
+          glass.addEventListener("mousemove", moveMagnifier);
+          img.addEventListener("mousemove", moveMagnifier);
+          /*а также для сенсорных экранов:*/
+          glass.addEventListener("touchmove", moveMagnifier);
+          img.addEventListener("touchmove", moveMagnifier);
+          function moveMagnifier(e) {
+            var pos, x, y;
+            /*предотвратите любые другие действия, которые могут произойти при перемещении по изображению*/
+            e.preventDefault();
+            /*получить позиции курсора x и y:*/
+            pos = getCursorPos(e);
+            x = pos.x;
+            y = pos.y;
+            /*не допускайте размещения увеличительного стекла вне изображения:*/
+            if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+            if (x < w / zoom) {x = w / zoom;}
+            if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+            if (y < h / zoom) {y = h / zoom;}
+            /*установите положение увеличительного стекла:*/
+            glass.style.left = (x - w) + "px";
+            glass.style.top = (y - h) + "px";
+            /*покажите что такое лупа:*/
+            glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+          }
+          function getCursorPos(e) {
+            var a, x = 0, y = 0;
+            e = e || window.event;
+            /*получить x и y позиции изображения:*/
+            a = img.getBoundingClientRect();
+            /*вычислите координаты курсора x и y относительно изображения:*/
+            x = e.pageX - a.left;
+            y = e.pageY - a.top;
+            /*рассмотрим любую прокрутку страницы:*/
+            x = x - window.pageXOffset;
+            y = y - window.pageYOffset;
+            return {x : x, y : y};
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="up">
+
+        <div class="logo">
+
+            <a href="index.html"><img src="ЛОГО.png" alt="" width="100px"></a>
+
+        </div>
+        <div class="menu">
+
+            <ul>
+                <li><a href="index.html" class="link">О нас</a></li>
+                <li><a href="Catalog_final.html" class="link">Каталог</a></li>
+                <li><a href="Poisck.html" class="link">Где нас найти</a></li>
+            </ul>
+
+        </div>
+        <div class="aut"> 
+
+           <button class="button_1">Войти</button>  
+
+        </div>
+
+    </div>
+    <br>
+    <div class="osnova">
+
+        <br>
+        <div class="img-magnifier-container">
+            <img id="myimage" src="ps5 2.jpg" width="600" height="400">
+        </div>
+
+        
+
+        <script>
+            /* Инициировать функцию увеличения
+            с идентификатором изображения и силой увеличительного стекла:*/
+            magnify("myimage", 2);
+        </script>
+            <br>
+        <div class="foto_all">
+
+            <div class="foto">
+                <a href="Tovar_0.html"><img src="ps5 2.jpg" alt="#"></a>
+            </div>
+            <div class="foto">
+                <a href="Tovar_0_2.html"><img src="PS5 1.jpg" alt="#"></a>
+            </div>
+
+        </div>
+        <div class="text">
+
+            <p class="text_1" >Игровая приставка Sony PlayStation 5,
+                <br>
+                с дисководом, 1000 ГБ SSD,
+                <br> 
+                без игр, белый
+            </p>
+
+        </div>
+        <div class="cor">
+
+            <div class="krug"></div>
+            <p class="text_3">В наличий</p>
+            <p class="text_2">20 000₽</p>
+            <button class="button_2">В корзину</button>
+            <p class="text_4">Код продукта:0000</p>
+
+        </div>
+        <div class="opisanie">
+
+            <p class="text_5">Описание:</p>
+            <p class="text_6" align="justify">
+                Sony PlayStation 5 – долгожданная модель 
+                среди миллионов геймеров.
+                Игровая приставка кардинально отличается от предыдущих
+                и имеет невероятное количество достоинств,
+                благодаря которым вы получите
+                удивительные ощущения от игрового процесса. 
+                Поддержка больших расширений и VR,
+                объемный 3D-звук,
+                измененный интерфейс – это лишь часть нововведений PS5.
+            </p>
+            <p class="text_7">
+                Тип приставки: Стационарная;<br>
+                Максимальное разрешение: 8К;<br>
+                Поддержка виртуальной реальности: есть;<br>
+                Тип процессора: AMD 8-ядерный;<br>
+                Частота процессора: 3500 МГц;<br>
+                Объем оперативной памяти: 16384 МБ;<br>
+                Тип оперативной памяти: GDDR6;<br>
+                Графический процессор: AMD Custom RDNA2;<br>
+                Объем видеопамяти: 16384 МБ;
+
+            </p>
+        </div>
+    </div>
+</body>
+</html>

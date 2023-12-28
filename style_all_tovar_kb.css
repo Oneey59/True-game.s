@@ -1,0 +1,395 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face{
+    font-family: "Sansation";
+    src: url(Sansation-Regular.ttf)
+}
+@font-face{
+    font-family: "Sansation_1";
+    src: url(Sansation_Light.ttf)
+}
+body{
+    background-color: #644005;
+}   
+.up{
+    width: 100%;
+    height: 112px;
+    background-color: #9D7B60;
+}
+.logo{
+    width:10%;
+    height:10%;
+    transform: translate(40%, 50%);
+}
+.menu{
+    display: flex;   
+    justify-content: center;
+    font-size: 55px;
+}
+.menu li{
+    margin-right: 25px;
+    list-style-type: none;
+    display: inline;
+}
+  
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+.link {
+    position: relative;
+  }
+  .link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    width: 0;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.link:hover:after {
+    width: 100%;
+}
+.aut{
+    width: 18%;
+    height: 100%;
+    transform: translate(432%, -66%);
+    display: flex;
+
+}
+.cor_up{
+    width: 50%;
+    height: 55%;
+    transform: translate(0%, 32%);
+}
+.cor_up img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.LK{
+    width: 50%;
+    height: 55%;
+    transform: translate(0%, 32%);
+}
+.LK img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.button_1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5bad4b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #59d05d;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    transform: translate(0%, 60%);
+
+
+}
+.button_2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5bad4b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #59d05d;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 30px;
+    transform: translate(0%, 120%);
+}
+button:hover {
+    background-color: #5bd25f; /* Зеленый */
+    color: white;
+}
+button:active{
+    background-color: #4cea52; /* Зеленый */
+    color: white;
+}
+.osnova{
+    background-color:#B3A272;
+    border-radius: 20px;
+    width: 90%;
+    height: 1141px;
+    transform: translate(5.2%, 0%);
+}
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+  width: 45.5%;
+  transform: translate(8%);
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 0%;
+  cursor: none;
+  /*Установите размер увеличительного стекла:*/
+  width: 150px;
+  height: 150px;
+}
+.img-magnifier-container img{
+    border-radius: 20px;
+}
+.foto_all{
+    height: 10%;
+    width: 30%;
+    display: flex;
+    transform: translate(0%, 0%);
+}
+.foto{
+    width: 30%;
+    height: 80%;
+    transform: translate(40%, 20%);
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+}
+.foto img:hover{
+    transform: scale(1.1);  
+}
+.text_1{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 45%;
+    transform: translate(115%, -430%);
+}
+.text_2{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 45%;
+    transform: translate(150%, 80%);
+}
+.text_3{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transform: translate(7%);
+}
+.text_4{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transform: translate(34%, 300%);
+}
+.text_5{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transform: translate(5%, 40%);
+}
+.text_6{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    transform: translate(5%, 10%);
+    width: 45%;
+    height: 70%;
+    
+    
+}
+.text_7{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    transform: translate(120%, -90%);
+    width: 45%;
+    height: 70%;
+    
+}
+.cor{
+    background-color:#0000009c;
+    border-radius: 20px;
+    width: 40%;
+    height: 260px;
+    transform: translate(129%, -200%);
+}
+.krug{
+    background-color: #79A15B;
+    width: 3%;
+    height: 6%;
+    border-radius: 50%;
+    transform: translate(100%, 120%);
+    border: 2px solid #fff;
+}
+.opisanie{
+    background-color:#0000009c;
+    border-radius: 20px;
+    width: 88.4%;
+    height: 520px;
+    transform: translate(4%, -68%);
+}
+
+@media screen and (max-width: 720px) {
+    .osnova{
+        background-color:#B3A272;
+        border-radius: 20px;
+        width: 90%;
+        height: 1641px;
+        transform: translate(5.2%, 0%);
+    }
+    .img-magnifier-container {
+        position:relative;
+        width: 45.5%;
+        transform: translate(8%);
+      }
+      
+      .img-magnifier-glass {
+        position: absolute;
+        border: 1px solid #000;
+        border-radius: 0%;
+        cursor: none;
+        /*Установите размер увеличительного стекла:*/
+        width: 150px;
+        height: 150px;
+      }
+      .img-magnifier-container img{
+          border-radius: 20px;
+      }
+      .foto_all{
+          height: 10%;
+          width: 45%;
+          display: flex;
+          transform: translate(10.5%, 0%);
+      }
+      .foto{
+          width: 80%;
+          height: 80%;
+          transform: translate(0%, 14%);
+      }
+      .foto img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: 0.2s;
+      }
+      .foto img:hover{
+          transform: scale(1.1);  
+      }
+      .text_1{
+          font-family:"Sansation";
+          color: #ffffff;
+          font-size: 28px;
+          transform: translate(7.5%);
+          line-height: 1.5;
+          letter-spacing: 1px;
+          width: 85%;
+          transform: translate(5%, 0%);
+      }
+      .text_2{
+        font-family:"Sansation";
+        color: #ffffff;
+        font-size: 36px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        width: 65%;
+        transform: translate(54%, 80%);
+    }
+    .text_3{
+        font-family:"Sansation";
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        transform: translate(9%);
+    }
+    .text_4{
+        font-family:"Sansation";
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        transform: translate(17%, 300%);
+    }
+    .text_5{
+        font-family:"Sansation";
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        transform: translate(5%, 40%);
+    }
+    .text_6{
+        font-family:"Sansation";
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+        transform: translate(5%, 10%);
+        width: 45%;
+        height: 70%;
+    }
+    .text_7{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    transform: translate(120%, -90%);
+    width: 45%;
+    height: 70%;
+    }
+    .cor{
+        background-color:#0000009c;
+        border-radius: 20px;
+        width: 40%;
+        height: 260px;
+        transform: translate(9%, 8%);
+    }
+    .krug{
+        background-color: #79A15B;
+        width: 4%;
+        height: 4%;
+        border-radius: 50%;
+        transform: translate(100%, 160%);
+        border: 2px solid #fff;
+    }
+    .opisanie{
+        background-color:#0000009c;
+        border-radius: 20px;
+        width: 88.4%;
+        height: 580px;
+        transform: translate(4%, 10%);
+    }
+
+
+}

@@ -1,0 +1,202 @@
+@font-face{
+  font-family: "Sansation";
+  src: url(Sansation-Regular.ttf)
+}
+@font-face{
+  font-family: "Sansation_1";
+  src: url(Sansation_Light.ttf)
+}
+body {
+    background: url('video.png');
+    background-size: cover;
+}
+  
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100%;
+  z-index: -9999;
+}
+.aute{
+  background-color:#000000b8;
+  border-radius: 20px;
+  width: 40%;
+  height: 420px;
+  transform: translate(71.5%, 20%);
+}
+.text_1{
+  font-family:"Sansation";
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  width: 100%;
+  transform: translate(0%, 30%);
+}
+input{
+  width: 55%;
+  height: 10%;
+  transform: translate(40%, 0%);
+  border-radius: 20px;
+  font-family:"Sansation";
+  font-size: 20px;
+}
+.log{
+  transform: translate(40%, 10%);
+}
+.pass{
+  transform: translate(40%, 50%);
+}
+.button_1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5bad4b;
+  color: rgb(255, 255, 255);
+  border: 2px solid #59d05d;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+  transform: translate(0%, 90%);
+
+
+}
+.button_1:hover {
+  background-color: #5bd25f; /* Зеленый */
+  color: white;
+}
+.button_1:active{
+  background-color: #4cea52; /* Зеленый */
+  color: white;
+}
+.button_2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d7d6d6;
+  color: rgb(0, 0, 0);
+  border: 2px solid #aeaeae;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+  transform: translate(0%, 130%);
+
+
+}
+.button_2:hover {
+  background-color: #ffffff; /* Зеленый */
+  color: rgb(0, 0, 0);
+}
+.button_2:active{
+  background-color: #646464; /* Зеленый */
+  color: rgb(255, 255, 255);
+}
+img{
+  width: 7%;
+  height: 10.5%;
+  transform: translate(50%, -562%);
+}
+@media screen and (max-width: 720px){
+
+  .bgvideo {
+    position: fixed;
+    right: -100%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+    z-index: -9999;
+  }
+  .aute{
+    background-color:#000000b8;
+    border-radius: 20px;
+    width: 90%;
+    height: 620px;
+    transform: translate(6%, 35%);
+  }
+  .text_1{
+    font-family:"Sansation";
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 100%;
+    transform: translate(0%, 30%);
+  }
+  input{
+    width: 65%;
+    height: 10%;
+    transform: translate(40%, 0%);
+    border-radius: 36px;
+    font-family:"Sansation";
+    font-size: 20px;
+  }
+  .log{
+    transform: translate(25%, 10%);
+  }
+  .pass{
+    transform: translate(25%, 50%);
+  }
+  .button_1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5bad4b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #59d05d;
+    cursor: pointer;
+    width: 350px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 30px;
+    transform: translate(0%, 90%);
+  
+  
+  }
+  .button_1:hover {
+    background-color: #5bd25f; /* Зеленый */
+    color: white;
+  }
+  .button_1:active{
+    background-color: #4cea52; /* Зеленый */
+    color: white;
+  }
+  .button_2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d7d6d6;
+    color: rgb(0, 0, 0);
+    border: 2px solid #aeaeae;
+    cursor: pointer;
+    width: 350px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 30px;
+    transform: translate(0%, 130%);
+  
+  
+  }
+  .button_2:hover {
+    background-color: #ffffff; /* Зеленый */
+    color: rgb(0, 0, 0);
+  }
+  .button_2:active{
+    background-color: #646464; /* Зеленый */
+    color: rgb(255, 255, 255);
+  }
+  img{
+    width: 8%;
+    height: 9%;
+    transform: translate(50%, -570%);
+  }
+}

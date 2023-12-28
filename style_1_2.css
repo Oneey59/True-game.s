@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #B3A272;
+}
+.up{
+    width: 100%;
+    height: 112px;
+    background-color: #9D7B60;
+}
+.logo{
+    width:10%;
+    height:10%;
+    transform: translate(40%, 40%);
+}
+.menu{
+    display: flex;   
+    justify-content: center;
+    font-size: 50px;
+}
+.menu li{
+    margin-right: 25px;
+    list-style-type: none;
+    display: inline;
+}
+  
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+.link {
+    position: relative;
+  }
+  .link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    width: 0;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.link:hover:after {
+    width: 100%;
+}
+.aut{
+    width: 18%;
+    height: 100%;
+    transform: translate(432%, -66%);
+    display: flex;
+
+}
+.osnova{
+    background-color:#644005;
+    border-radius: 20px;
+    height: 900px;
+    width: 70%;
+    transform: translate(21%, -7%);
+}
+.cor_up{
+    width: 50%;
+    height: 55%;
+    transform: translate(0%, 32%);
+}
+.cor_up img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.LK{
+    width: 50%;
+    height: 55%;
+    transform: translate(0%, 32%);
+}
+.LK img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5bad4b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #59d05d;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    transform: translate(0%, 50%);
+
+
+}
+button:hover {
+    background-color: #5bd25f; /* Зеленый */
+    color: white;
+}
+button:active{
+    background-color: #4cea52; /* Зеленый */
+    color: white;
+}
+.slide_offical{
+    height: 400px;
+}
+
+.slider{
+    width: 650px;
+    height: 350px;
+    overflow: hidden;
+    border: 4px solid #E37F74;
+}
+.middle{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 41.5%);
+}
+.navigation{
+    position: absolute;
+    bottom:16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 30px;
+    height: 10px;
+    margin: 8px;
+    cursor: pointer;
+    background-color: #000000;
+    opacity: .2 ;
+    border-radius: 15px;
+    transition: all .4s ease;
+}
+.bar:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+input[name="a"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+
+}
+#a1:checked ~ .s1{
+    margin-left: 0%;
+    width: 33.3%;
+}
+#a2:checked ~ .s1{
+    margin-left: -25%;
+}
+#a3:checked ~ .s1{
+    margin-left: -50%;
+}
+#a4:checked ~ .s1{
+    margin-left: -75%;
+}
+#a5:checked ~ .s1{
+    margin-left: -100%;
+}
+.info{
+    width: 100%;
+    height: 300%;
+    transform: translate(0%, 43%);
+    border-radius: 20px;
+    background-color: #644005;
+    
+}
+@font-face{
+    font-family: "Sansation";
+    src: url(Sansation-Regular.ttf)
+}
+@font-face{
+    font-family: "Sansation_1";
+    src: url(Sansation_Light.ttf)
+}
+h1{
+    font-family:"Sansation";
+    color: #ffffff;
+}
+.left_right{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: space-evenly;
+}
+.left_o{
+    width: 50%;
+    height: 80%;
+    border: 2px solid #ffffff;
+    background-color: #E37F74;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
+}
+.right_o{
+    width: 40%;
+    height: 80%;
+    border: 2px solid #ffffff;
+    background-color: #B3A272;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
+}
+.text_1{
+    font-family: "Sansation";
+    font-size: 32px;
+    color: #ffffff;
+    transform: translate(7.5%);
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+}
+.tube{
+    font-family: "Sansation_1";
+    font-size: 42px;
+    color: #ffffff;
+    margin-left: 7.5%;
+}
+.youtube{
+    font-family: "Sansation";
+    font-size: 36px;
+    color: #ffffff;
+}
+.onas{
+    font-family: "Sansation";
+    font-size: 48px;
+    color: #ffffff;
+    transform: translate(-2%, 20%);
+}
+.text_2{
+    font-family: "Sansation";
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transform: translate(-2%, 10%); 
+}
+.baner{
+    transform: translate(0%, -80%);
+    height: 21%;
+}
+.baner img{
+    border: 2px solid #000000;
+    border-radius: 15px;
+    width: 93.5%;
+    height: 100%;
+    transform: translate(3.4%, 0%);
+}
+.footer{
+    background-color: #9D7B60;
+    width: 100%;
+    height: 250px;
+    transform: translate(0%, 520%);
+}
+.text_fo{
+    font-family: "Sansation";
+    font-size: 16px;
+    color: #ffffff;
+    transform: translate(7.5%);
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transform: translate(4%, 10%);
+}
+iframe{
+    width: 85%;
+    height: 315px;
+}
+
+@media screen and (max-width: 720px){
+    .left_o{
+        width: 40%;
+        height: 80%;
+        border: 2px solid #ffffff;
+        background-color: #E37F74;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
+    }
+    .right_o{
+        width: 50%;
+        height: 80%;
+        border: 2px solid #ffffff;
+        background-color: #B3A272;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
+    }
+    .text_1{
+        font-family: "Sansation";
+        font-size: 24px;
+        color: #ffffff;
+        transform: translate(7.5%);
+        line-height: 1.5;
+        letter-spacing: 1px;
+    
+    }
+    .text_2{
+        font-family: "Sansation";
+        width: 90%;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        transform: translate(8%, 2%);
+    }
+    iframe{
+        width: 75%;
+        height: 195px;
+    }
+    .baner{
+        transform: translate(0%, -80%);
+        height: 18%;
+    }
+    .baner img{
+        border: 2px solid #000000;
+        border-radius: 15px;
+        width: 95%;
+        height: 100%;
+        transform: translate(2.4%, 0%);
+    }
+}
